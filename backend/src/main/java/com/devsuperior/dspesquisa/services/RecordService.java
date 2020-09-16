@@ -22,7 +22,7 @@ public class RecordService {
 	@Autowired
 	private GameRepository gameRepository;
 	
-	@Transactional()
+	@Transactional
 	public RecordDTO insert(RecordInsertDTO dto) {
 		
 		Record entity = new Record();

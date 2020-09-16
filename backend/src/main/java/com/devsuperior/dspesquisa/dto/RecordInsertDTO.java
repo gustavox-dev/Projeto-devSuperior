@@ -10,7 +10,9 @@ public class RecordInsertDTO implements Serializable {
 	private Integer age;
 	private Long gameID;
 	
-	public RecordInsertDTO() {}
+	public RecordInsertDTO() {
+		
+	}
 
 	public String getName() {
 		return name;

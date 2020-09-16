@@ -12,7 +12,7 @@ import com.devsuperior.dspesquisa.dto.RecordInsertDTO;
 import com.devsuperior.dspesquisa.services.RecordService;
 
 @RestController
-@RequestMapping(value = "/records")
+@RequestMapping("/records")
 public class RecordResource {
 	
 	@Autowired
