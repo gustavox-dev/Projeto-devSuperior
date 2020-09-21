@@ -21,7 +21,7 @@ const initialPieData = {
     series: []
 }
 
-const BASE_URL = 'http://localhost:8080'
+const BASE_URL = 'https://sds1-gustavox.herokuapp.com'
 
 const Charts = () => {
 
@@ -35,7 +35,9 @@ const Charts = () => {
             const gamesResponse = await axios.get(`${BASE_URL}/games`)
             
             const barData = buildBarSeries(gamesResponse.data, recordsResponse.data.content)
+            
             setBarChartData(barData)
+            
 
             const platformChartData = getPlatformChartData(recordsResponse.data.content)
             setPlatformData(platformChartData)
